@@ -115,6 +115,12 @@ tv() {
 
 # GitHub CLI
   alias grc='gh repo create '
+  alias gs='git status'
+  alias gcm='git commit -m $1'
+  alias gp='git pull'
+  alias gu='git checkout main | git pull'
+  alias ga='git add $@'
+  alias gau='git add -u $@'
 
 # All Versions
   alias v='echo "***Terraform***"; tver; echo -e "\n***tflint***"; tflint -v; echo -e "\n***Packer***"; pver; echo -e "\n***Docker***"; dver; echo -e "\n***AZ CLI***"; az -v; echo -e "\n***Databricks CLI***"; dbver; echo -e "\n***Maven***"; mvn -version; echo -e "\n***Java***"; java -version; echo -e "\n***Python2***"; python --version; echo -e "\n***Python3***"; python3 --version; echo -e "\n***pip***"; pip --version; echo -e "\n***DotNet Core***"; dotnet --version; echo -e "\n***go***"; go version; echo -e "\n***Node npm and nvm***"; node -v; npm -v; nvm -v; echo -e "\n***Git***"; git --version; echo -e "\n***GitHub CLI***"; gh --version; echo -e "\n***Ansible***"; aver; echo -e "\n***Chef***"; chef -v; echo -e "\n***Kubectl***"; kubectl version; echo -e "\n***Helm***"; helm version; echo -e "\n"'
