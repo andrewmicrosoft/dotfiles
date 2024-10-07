@@ -70,7 +70,8 @@ function __serverLocation {
   elif [[ ! -z $ACC_TERM_ID ]]; then where="Azure Cloud Shell ($ACC_LOCATION)☁";
   elif [[ $CODESPACES == "true" ]]; then where="GitHub Codespaces🐙";
   #elif [[ "$(lsb_release -i)" =~ "Raspbian" ]]; then where="Raspberry Pi🍇";
-  #elif [[ "$(lsb_release -i)" =~ "Ubuntu" ]]; then where="\e[38;5;209mUbuntu🐧"; fi
+  #elif [[ "$(lsb_release -i)" =~ "Ubuntu" ]]; then where="\e[38;5;209mUbuntu🐧"; 
+  fi
   echo $where
 }
 
